@@ -7,5 +7,24 @@
 </head>
 <body>
     <h1>Coin Toss</h1>
+
+    <button id="button">Toss coin</button>
+
+    <h2 id="result">Result will show here</h2>
 </body>
+<script>
+    
+    let button = document.getElementById("button")
+    let Result = document.getElementById("result")
+
+    button.addEventListener("click" , function(){
+        let random = Math.random()
+        if (random < 0.5){
+            Result.innerText = "Head"
+        }
+        else{
+            Result.innerText = "Tail"
+        }
+    })
+</script>
 </html>
